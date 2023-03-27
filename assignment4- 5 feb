@@ -1,0 +1,168 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "6d57f116-c4b0-484d-a758-cd025319c1f6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'blue'"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1.sol- a class is bundle of attributes and member function . It act as blueprint to ceate object\n",
+    "#an object is created simply by assigning a variable with class .\n",
+    "#example\n",
+    "\n",
+    "class Pen : # building a modell or blueprint first\n",
+    "    price=10\n",
+    "    color='blue' # defining attributes\n",
+    "    typ='ball'\n",
+    "    def work(self):\n",
+    "        print(\"pen can write on paper\")\n",
+    "    \n",
+    "obj1=Pen() #creating object\n",
+    "obj1.color\n",
+    "  \n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "a3eaa5c6-c52d-474d-a64a-0e44c6d489fe",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "pen can write on paper\n"
+     ]
+    }
+   ],
+   "source": [
+    "obj1.work()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "95eb036a-9190-4398-bd22-a6f0f20d8d33",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2 sol-the four pillars of oops are Abstraction,Encapsulation,Inheritance and Polymorphism."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "da04c957-3db9-429b-a540-2b3615420ff6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'aurvedic'"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#3.sol __init__() is used to assign 'value' to object attributes or properties.\n",
+    "class soap:\n",
+    "    def __init__(self,typ1,cost):\n",
+    "        self.typ1=typ1\n",
+    "        self.cost=cost\n",
+    "medimix=soap(\"aurvedic\",50)\n",
+    "medimix.typ1\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "22566809-d73e-496c-b439-a2f1b1fef4ee",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3.self is used to pass created object as argument in member function .\n",
+    "# self key word makes an object eligible to access member funtion of a class."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "7d949633-ad41-49a2-addb-03f75da34895",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# inheritance means creating a class that has acquired all properties and methods from other class called parent class.\n",
+    "class writer : # building a modell or blueprint first\n",
+    "    price1=10\n",
+    "    color1='red' # defining attributes\n",
+    "    typ3='gel'\n",
+    "    def work(self):\n",
+    "        print(\"pen can write on paper\")\n",
+    "        \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "dbc616dc-40d8-484e-a482-245c0b531c9d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'red'"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "class babypen(writer):\n",
+    "    pass\n",
+    "j=babypen()\n",
+    "j.color1\n",
+    "    "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
